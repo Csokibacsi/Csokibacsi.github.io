@@ -1,0 +1,11 @@
+- Githubban jobb felső sarok new repository
+- A neve legyen a usernév\github.io pl. Csoikbacsi\github.io
+- create repository 
+- clone or download
+- majd Visual studioban is van Terminál (pl. ctrl+ö)
+- odanavigálok a mappába, ahová checkoutolni akarom
+
+git clone <url> //a kikopizott, clone linket
+cd .\Csokibacsi.github.io
+//új vs code ablakot nyitok itt// code .
+
