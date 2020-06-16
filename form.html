@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
     <link rel="stylesheet" href="lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
     <script src="\lib\bootstrap-4.5.0-dist\js\bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -14,7 +14,7 @@
 <body>
     <div class="container">
 
-        <h2>Form</h2>
+        <!--<h2>Form</h2>
         <form>
             <div class="form-group col-6">
                 <label for="exampleInputEmail1">Email address</label>
@@ -31,27 +31,23 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
-            <button onClick='window.location.reload();' type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
             <br>
-            
-        </form>
+
+        </form>-->
 
         <hr>
 
         <form>
-            <input type="text" name="nev" id="nev">
-            <span class="neve">#Név</span>
+            <h3>Mennyiség</h3>
+            <input type="number" class="form-control" name="db" value="1"><br>
+            
+            <button onclick="calcAmount()" type="button" class="btn btn-success">Kiszámol</button><br> <!-- a type-nak button-nak kell lennie, hogy trartósan kiadja az összeget!!!-->
+            Összege: <span class="summa">0</span> Ft
         </form>
 
-        <script>
-            var userName = document.querySelector("input[name='nev']");
-            var nevKiir = userName.value.toString();
-            var Neve = document.querySelector("span.neve");
-           
-            Neve.innerHTML = nevKiir;
-            
-        </script>
-        <!--<script src="\js\main.js"></script>-->
+        
+        <script src="\js\main.js"></script>
     </div>
 </body>
 
