@@ -22,3 +22,10 @@ function showSumPrice(price, amountNumber){ //itt argumentumnak h√≠vjuk a param√
        showAmount.innerHTML = amount;
    }
 }
+
+function displayName(){
+    let nev = document.querySelector("input[name='nev']");
+    let neve = document.querySelector("span.neve");
+    let nevErtek = nev.value.toString();
+    neve.innerHTML = nevErtek;
+}

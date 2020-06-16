@@ -38,12 +38,24 @@
 
         <hr>
 
+
+
         <form>
             <h3>Mennyiség</h3>
             <input type="number"  name="db" value="1"><br>
             
             <button onclick="calcAmount()" type="button" class="btn btn-success">Kiszámol</button><br> <!-- a type-nak button-nak kell lennie, hogy trartósan kiadja az összeget!!!-->
             Összege: <span class="summa">0</span> Ft
+        </form>
+
+        <hr>
+
+        <form>
+            <h3>Neve</h3>
+            <input type="text"  name="nev" value=""><br>
+            
+            <button onclick="displayName()" type="button" class="btn btn-success">Elküld</button><br> <!-- a type-nak button-nak kell lennie, hogy trartósan kiadja az összeget!!!-->
+            Név: <span class="neve"></span> 
         </form>
 
         
