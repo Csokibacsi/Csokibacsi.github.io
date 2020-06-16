@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teszt</title>
+    <link rel="stylesheet" href="lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
 </head>
 <body>
+    <div class="container">
     <h1>Főcím</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--<a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>-->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Form</a>
+              </li>
+              
+             <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>-->
+            </ul>
+        </div>
+      </nav>
     <h3>Alcím</h3>
     <h6>Kicsi</h6>
     <p>Nem én voltam, <b>hej!</b></p>
@@ -22,13 +51,13 @@ w3 validatorban lehet lecsekkolni a kódot, hogy minden rendben van-e
 
 -->
 
-<table>
+<table class="table table-striped table-bordered">
     <caption>Nyitvatartás</caption>
-    <thead>
+    <thead class="thead-dark">
         <tr>
-            <th>Nap</th>
-            <th>Nyitás</th>
-            <th>Zárás</th>
+            <th scope="col">Nap</th>
+            <th scope="col">Nyitás</th>
+            <th scope="col">Zárás</th>
         </tr>
     </thead>
 
@@ -40,7 +69,7 @@ w3 validatorban lehet lecsekkolni a kódot, hogy minden rendben van-e
         </tr>
         <tr>
             <td>Szombat</td>
-            <td>9:00</td>
+            <td>09:00</td>
             <td>24:00</td>
         </tr>
         <tr>
@@ -51,13 +80,15 @@ w3 validatorban lehet lecsekkolni a kódot, hogy minden rendben van-e
     </tbody>
 <tfoot>
     <tr>
-        <td colspan="3"> &copy 2020</td>
+        <td colspan="3"><center> &copy 2020</center></td>
     </tr>
     
 </tfoot>
 
 </table>
 
+<script src="\lib\bootstrap-4.5.0-dist\js\bootstrap.min.js"></script>
 
+</div>
 </body>
 </html>
