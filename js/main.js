@@ -36,3 +36,18 @@ function displayName(){
         alert("Adjon meg egy nevet!");
     }
 }
+
+function showStats(){
+    let nev = document.querySelector("input[name='nev']");
+    let nevErtek = nev.value.toString();
+    let szam = document.querySelector("input[name='szam']");
+    let szamErtek = parseInt(szam.value);
+    let tomb = [nevErtek, szamErtek]; 
+    let showStats = document.querySelector("span.stats");
+    if(nevErtek.length>=3 && szamErtek>0){
+       // showStats.innerHTML = nevErtek + ": " + szamErtek;
+       showStats.innerHTML = tomb[0] + ": " + tomb[1];
+    } else {
+        alert("Hibás név és/vagy érték!");
+    }
+}
