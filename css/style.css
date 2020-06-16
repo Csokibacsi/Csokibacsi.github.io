@@ -1,0 +1,9 @@
+@font-face{
+    font-family:Bebas;
+    src:url("../lib/fonts/bebas_neue/BebasNeue-Regular.ttf");
+    font-size:normal;
+}
+
+h2{
+    font-family: Bebas;
+}
