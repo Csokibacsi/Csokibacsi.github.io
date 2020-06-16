@@ -27,5 +27,12 @@ function displayName(){
     let nev = document.querySelector("input[name='nev']");
     let neve = document.querySelector("span.neve");
     let nevErtek = nev.value.toString();
-    neve.innerHTML = nevErtek;
+    if(nevErtek.length>0){
+        if(typeof nevErtek === 'string'){
+            neve.innerHTML = nevErtek;
+        } 
+   
+    } else {
+        alert("Adjon meg egy nevet!");
+    }
 }
