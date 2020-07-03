@@ -1,0 +1,79 @@
+h1 {
+  color: blue;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.login-div {
+  padding: 15px;
+  border: 1px solid #0c0c0c;
+  box-shadow: 0 0 2px #777777;
+  display: inline-block;
+}
+/*
+    Ha body div.login-div lenne, ugyanerre vonatkozna, de sokkal szűkebb meghatározás lenne - a body alatt lévő div-re vontakozna, aminek a class-sza
+    login-div, és csak erre vonatkozna
+
+    div után szóköz eggyel lejjebbi szintre visz, ha 
+    azonos szinbtet jelölünk, akkor .-tal választjuk el
+*/
+
+.login-div input {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.login-div input[type="email"] {
+  /*ez az attribútum szelektor - az összes email típusú inputra*/
+  /*ugyanígy a type, a class stb. attribútumokra */
+  border: 1px solid blue;
+}
+.login-div input[type="password"] {
+  /*ez az attribútum szelektor - az összes password típusú inputra*/
+  border: 1px solid red;
+}
+
+input[class*="control"] {
+  /* class*= wild card */
+  display: block;
+  /*az összes olyan elemre, melynek a class-sza tartalmazza a "control" stringet, igaz legyen*/
+}
+
+input[class*="blue"] {
+  /*wild card - bárhol szerepel a class nevében a blue string, alkalmazni fogja a szabályt*/
+  border: 1px solid blue;
+}
+input[class^="blue"] {
+  /*^ vagy caret, a blue kezdetű classra vonatkozik*/
+  border: 1px solid blue;
+}
+input[class$="red"] {
+  /*$  a red végződésű classra vonatkozik*/
+  border: 1px solid red;
+}
+
+.login-div button:hover {
+  /*:hover az ún. pseudo selector*/
+  box-shadow: 2px 2px 3px #c0c0c0;
+}
+
+.login-div input:focus {
+  /*az input mezőbe, ha elkezdtünk írni*/
+  box-shadow: 2px 2px 3px #c0c0c0;
+  border: none;
+}
+
+ul li:last-child {
+  /*az utolsó listaelemre vonatkozik*/
+  text-decoration: underline;
+}
+ul li:first-child {
+  /*az első listaelemre vonatkozik*/
+  color: red;
+}
+ul li:nth-child(2) {
+  /*a sorban a második listaelemre vonatkozik*/
+  color: blue;
+}

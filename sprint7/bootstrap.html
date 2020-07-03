@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!---width-device-width tiltja a vízszintes scrollt-->
+    <title>Home</title>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+</head>
+<body">
+    <h1>Bootstrap hello</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/bootstrap.html">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/bootstrap.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/login.html">Contact</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+      <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                1 of 3 columns
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                1 of 3 columns
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                1 of 3 columns
+            </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-outline-warning">Warning</button>
+                <button type="button" class="btn btn-outline-info">Info</button>
+                <button type="button" class="btn btn-outline-light">Light</button>
+                <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div> 
+        </div>
+      </div>
+
+<br>
+      <div class="container">
+        <div class="row">
+          <div class="col3"></div>
+          <div class="col6">
+            <h3>Hambi rendelés</h3>
+            <div class="alert alert-info alert-dismissible fade show" role="alert">
+              <strong>Kedves Vásárlónk!</strong> Töltse ki az összes mezőt!
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form action="">
+              <div class="form-group">
+                <label for="">Feltét</label>
+                <input id="topInput" type="text" name="top-input" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Mennyiség</label>
+                <input type="number" name="amount-input" class="form-control" value="1">
+                <small class="form-text text-muted">
+                  Minimum 1, maximum 10db
+                </small>
+              </div>
+              <div class="form-group">
+                Fizetendő: <span class="show-amount">0</span> Ft
+              </div>
+
+             <!---- <button onclick="calcAmount()" type="button" class="btn btn-primary">Megrendelés</button> dom2.js-ben submit-re hivatkozok-->
+             <button type="submit" class="btn btn-primary">Megrendelés</button>  <!--onclick="calcAmount()" type="button" -->
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <script src="js/main.js"></script>
+      <script src="js/dom2.js"></script>
+      <!--<script src="js/algo.js"></script>-->
+ 
+</body>
+</html>

@@ -1,0 +1,8 @@
+- Végesek, tehát megszámlálhtó lépésekből állnak
+- Egyértelműek!
+- El lehet őket végezni!
+
+- Az algoritmus leíró diagrmon kör a kiindilási pont, nyil mutat a lépésekre, 
+elágazás-> rombusz elforgatva stb.
+- UML diagramnak is hívják
+
